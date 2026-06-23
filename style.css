@@ -1309,3 +1309,9 @@ body{
   display: block;
   margin: 0 auto 15px;
 }
+@media (max-width: 768px) {
+  .home-only {
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+}
