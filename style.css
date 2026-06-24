@@ -1311,7 +1311,12 @@ body{
 }
 @media (max-width: 768px) {
   .home-only {
-    background-size: cover !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    background-size: contain !important;
     background-position: center top !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 9 / 16;
   }
 }
