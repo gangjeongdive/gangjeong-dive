@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gangjeongdive.com/contact.html</loc></url>
-  <url><loc>https://gangjeongdive.com/course.html</loc></url>
-  <url><loc>https://gangjeongdive.com/facility.html</loc></url>
-  <url><loc>https://gangjeongdive.com/fundive.html</loc></url>
-  <url><loc>https://gangjeongdive.com/</loc></url>
-  <url><loc>https://gangjeongdive.com/location.html</loc></url>
-  <url><loc>https://gangjeongdive.com/point.html</loc></url>
-  <url><loc>https://gangjeongdive.com/price.html</loc></url>
+  <url>
+    <loc>https://gangjeongdive.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/course.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/facility.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/fundive.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/location.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/point.html</loc>
+  </url>
+  <url>
+    <loc>https://gangjeongdive.com/price.html</loc>
+  </url>
 </urlset>
