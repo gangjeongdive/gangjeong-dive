@@ -216,13 +216,16 @@ img{max-width:100%;display:block}
 .page-hero h1 {
   margin: 0 0 8px;
   font-size: clamp(38px, 5vw, 58px);
+  color: #ffffff !important;
+  text-shadow: 0 3px 14px rgba(0,0,0,.55);
 }
 
 .page-hero p {
   margin: 0;
-  color: var(--muted);
+  color: rgba(255,255,255,.95) !important;
   text-transform: uppercase;
   letter-spacing: .14em;
+  text-shadow: 0 2px 10px rgba(0,0,0,.55);
 }
 
 .subpage-main .section:first-child {
@@ -1309,14 +1312,78 @@ body{
   display: block;
   margin: 0 auto 15px;
 }
+
+
+/* =========================================================
+   FINAL MOBILE / CLEAN FIX - 2026-06-24
+   메인 모바일 큰 여백 제거 + 모바일 메뉴 안정화
+   ========================================================= */
+
 @media (max-width: 768px) {
   .home-only {
-    min-height: auto !important;
+    min-height: 0 !important;
     height: auto !important;
     padding: 0 !important;
+    aspect-ratio: 16 / 9 !important;
     background-size: contain !important;
-    background-position: center top !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
-    aspect-ratio: 9 / 16;
+  }
+
+  .home-feature {
+    padding-top: 56px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .instagram-section {
+    padding: 64px 18px !important;
+  }
+
+  .floating {
+    right: 16px !important;
+    bottom: 18px !important;
+  }
+
+  .floating a {
+    width: 58px !important;
+    height: 58px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    font-size: 20px !important;
+    gap: 10px !important;
+  }
+
+  .brand img {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .header-inner {
+    padding: 14px 16px !important;
+  }
+
+  .menu-btn {
+    font-size: 26px !important;
+    padding: 12px 15px !important;
+  }
+}
+/* 모바일 메인 이미지 상단 가림 수정 */
+@media (max-width: 768px) {
+  .header {
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+  .home-only {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    aspect-ratio: 16 / 9 !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
   }
 }
