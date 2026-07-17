@@ -1403,3 +1403,79 @@ body{
   color:#475569;
   line-height:1.8;
 }
+
+/* ===== HEADER MENU VISIBILITY FIX ===== */
+/* 모든 페이지에서 첫 번째 '이벤트' 메뉴가 화면 밖으로 밀리지 않도록
+   상단 메뉴를 한 줄로 고정하고, 좁은 화면에서는 햄버거 메뉴로 전환합니다. */
+.header-inner{
+  max-width:1400px;
+}
+
+.nav{
+  flex:0 0 auto;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+  gap:clamp(14px, 1.8vw, 30px);
+}
+
+.nav a{
+  display:inline-flex;
+  align-items:center;
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
+.nav .event-link{
+  visibility:visible !important;
+  opacity:1 !important;
+}
+
+.menu-btn{
+  color:#0f172a;
+  border-color:#cbd5e1;
+}
+
+@media (max-width:1100px){
+  .header-inner{
+    padding:14px 18px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav{
+    position:fixed;
+    top:74px;
+    left:14px;
+    right:14px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    gap:4px;
+    padding:18px;
+    background:rgba(255,255,255,.98) !important;
+    border:1px solid #dbeafe !important;
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(15,23,42,.14);
+  }
+
+  .nav.show{
+    display:flex;
+  }
+
+  .nav a{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+  }
+
+  .nav a:hover{
+    background:#eff6ff;
+  }
+
+  .nav .book{
+    justify-content:center;
+    margin-top:6px;
+  }
+}
