@@ -1,19 +1,47 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>강정다이브센터 | 제주 서귀포 보트다이빙 · SDI · PADI 교육</title>
-  <meta name="description" content="제주 서귀포 강정다이브센터. 보트 펀다이빙, 체험다이빙, SDI 교육, PADI 교육, 전용선 운영, 도미토리 숙소 제공.">
-  <meta property="og:title" content="강정다이브센터 | 제주 보트다이빙 · SDI · PADI 교육">
-  <meta property="og:description" content="제주 서귀포 강정다이브센터. 전용선 보트다이빙, 체험다이빙, SDI/PADI 교육, 도미토리 숙소 제공.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gangjeongdive.com">
-  <meta property="og:image" content="https://gangjeongdive.com/images/logo.png">
-
-  <meta name="description" content="제주 강정에서 시작하는 프리미엄 다이빙">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 | 강정다이브센터</title>
+  <meta name="description" content="강정다이브센터 이벤트 안내입니다.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .event-section {
+      padding: 64px 24px 90px;
+    }
+    .event-image-list {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: grid;
+      gap: 36px;
+    }
+    .event-image-card {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+    .event-image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+    @media (max-width: 560px) {
+      .event-section {
+        padding: 42px 16px 64px;
+      }
+      .event-image-list {
+        gap: 22px;
+      }
+      .event-image-card {
+        border-radius: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
 <header class="header">
@@ -35,32 +63,27 @@
     </nav>
   </div>
 </header>
+
 <main class="subpage-main">
   <section class="page-hero">
     <div class="container">
-      <h1>교육과정</h1>
-      <p>Course</p>
+      <h1>이벤트</h1>
+      <p>Event</p>
     </div>
   </section>
-  <section class="section">
-    <div class="container course-grid">
-      <article class="card course-card">
-        <h3>오픈워터</h3>
-        <img src="images/open-water.jpg" alt="오픈워터 과정">
-        <p>스쿠버다이빙의 첫걸음.<br>
-기초 이론부터 수중 적응까지 차근차근 배우며
-안전하게<br>다이빙을 시작할 수 있습니다.<br>*포함 : 1박2일교육 + 풀장비렌탈 + 도미토리(7인실) 1박 무료</p>
-      </article>
-      <article class="card course-card">
-        <h3>어드밴스</h3>
-        <img src="images/advanced.jpg" alt="어드밴스 과정">
-        <p>다양한 수중 환경을 경험하며<br>
-중성부력, 수중 네비게이션 등
-한 단계 높은 다이빙 스킬을 배웁니다.<br><br>*포함 : 1박2일교육 + 풀장비렌탈 + 도미토리(7인실) 1박무료</p>
-      </article>
+
+  <section class="event-section">
+    <div class="event-image-list">
+      <figure class="event-image-card">
+        <img src="images/event-01.jpg" alt="강정다이브 첫 번째 이벤트" data-lightbox>
+      </figure>
+      <figure class="event-image-card">
+        <img src="images/event-02.jpg" alt="강정다이브 두 번째 이벤트" data-lightbox>
+      </figure>
     </div>
   </section>
 </main>
+
 <footer class="info-footer">
   <div class="footer-grid">
     <div><strong>강정다이브</strong>GANGJEONG DIVE</div>
